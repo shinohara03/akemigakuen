@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+html {
+    font-size: 16px;
+}
+
+html * ,
+    ::before,
+    ::after {
+        box-sizing:border-box;
+    }
+    
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
