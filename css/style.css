@@ -289,6 +289,10 @@ body {
     border-bottom:2px dotted #333;
     margin:10px 0;
 }
+.information_textbox dl:first-child {
+    border-top: none;
+}
+
 
 
 /* overflow-x: hidden;
