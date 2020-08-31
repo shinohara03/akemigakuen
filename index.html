@@ -5,13 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>明美学園</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
 <body>
-    <header>
-        <div class="header_logo">
-            <h1>明美学園</h1>
+    <div class="wrapper clear">
+        <header>
+            <!-- ロゴ -->
+            <div class="header_logo">
+                <div class="logo_mark">
+                    <a href="#">
+                            <span class="logo_icon"><img src="img/logo.png" alt="ロゴマーク">
+                        </span>
+                        <p class="text">AKEMI</p>
+                    </a>
+                </div>
+                    <div class="akemigakuen">
+                        <h1>明美学園</h1>
+                        <p>認定こども園<br/>あけみ保育園・あけみ幼稚園</p>
+                    </div>
+            </div>
+            <!-- ナビゲーション -->
+                <div id="humberger_btn">
+                    <span class="inner_line" id="line_1"></span>
+                    <span class="inner_line" id="line_2"></span>
+                    <span class="inner_line" id="line_3"></span>
+                </div>
+
+            <nav class="navigation_content" id="nav_humberger">
+                <ul>
+                    <li class="nav_list"><a href="#">ホーム</a></li>
+                    <li class="nav_list"><a href="#">当園について</a></li>
+                    <li class="nav_list"><a href="#">年間行事・園の生活</a></li>
+                    <li class="nav_list"><a href="#">入園の案内</a></li>
+                    <li class="nav_list"><a href="#">お問い合わせ</a></li>
+                    <li class="nav_list"><a href="#">交通の案内</a></li>
+                </ul>
+            </nav>           
+        </header>
+        <!-- スライドショ -->
+        <div class="slideshow"> 
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <nav></nav>
-    </header>
+
+
+        <section>
+            <div class="information_content">
+                <div class="information_header">
+                    <span class="icon_info"><img src="img/oshirase.png" art="お知らせマーク"></span>
+                    <span class="info_head"> 
+                        <li class="info_1line">お知らせ</li>
+                        <li class="info_2line">INFORMATION</li>
+                    </span>
+                </div>
+
+                <div class="information_textbox clear">
+                <dl>
+                    <dt>日付</dt>
+                    <dd>ニュースタイトル</dd>
+                </dl>
+                <dl>
+                    <dt>日付</dt>
+                    <dd>ニュースタイトル</dd>
+                </dl>
+                <dl>
+                    <dt>日付</dt>
+                    <dd>ニュースタイトル</dd>
+                </dl>
+                <dl>
+                    <dt>日付</dt>
+                    <dd>ニュースタイトル</dd>
+                </dl>
+                <div class="info_more"></div>
+
+            </div>
+        </section>
+        <section>
+            <div class="topics1_content"></div>
+            <div class="topics2_content"></div>
+        </section>
+
+        <div class="miryoku_banner">
+            <img src="" art="">
+        </div>
+
+       
+
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+    // ハンバーガーメニュー
+        function humberger () {
+            document.getElementById("line_1").classList.toggle("line1");
+            document.getElementById("line_2").classList.toggle("line2");
+            document.getElementById("line_3").classList.toggle("line3");
+            document.getElementById("nav_humberger").classList.toggle("fadein");
+        }
+        document.getElementById("humberger_btn").addEventListener("click",function(){
+            humberger();
+        });
+
+
+    // スライドショー 
+
+        var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: { 
+        delay: 4000,//秒数の指定
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    </script>
 </body>
 </html>
+
