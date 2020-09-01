@@ -4,6 +4,7 @@ html {
     font-size: 16px;
     font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     background: #f1f0ec;
+    color:#333;
 
 }
 
@@ -27,6 +28,7 @@ img {
 /* link 下線非表示　共通 */
 a {
     text-decoration:none;
+    color:#000;
 }
 
 /* float解除 */
@@ -49,7 +51,6 @@ a {
 .logo_mark a{
     display:inline-block;
     font-size:1rem;
-    color:#000; 
 }
 
 .logo_icon {
@@ -373,4 +374,31 @@ dl.topics_list {
 }
 .topics_list dd{
     line-height: 130%;
+}
+/* 明美学園　概要ページへリンクバナー */
+.overview_banner {
+    margin:0 auto;
+    margin:10px;
+    padding:20px;
+}
+
+
+/* 入園をご検討中の皆さまへ */
+.guide_content {
+    margin:0 auto;
+    margin:10px;
+    padding:20px;
+}
+
+.guide_content h2{
+    font-size: 1rem;
+    border-bottom: solid 1px #000;
+}
+.guide_content ul li{
+ list-style:none;
+ border-bottom: dashed 1px #000;
+ text-align:center;
+}
+.guide_content {
+
 }
