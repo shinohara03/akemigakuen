@@ -295,7 +295,7 @@ body {
 
 
 .information_textbox dl {
-    border-bottom:2px dotted #333;
+    border-bottom:2px dashed #333;
     margin:10px 0;
 }
 .information_textbox dl:first-child {
@@ -334,7 +334,7 @@ p.look{
 .topics_header {
 	display: table;
     margin: auto;
-    /* padding:10px; */
+    padding:10px;
 }
 .icon_tree {
     float:left;
@@ -361,20 +361,21 @@ p.look{
     font-size: 0.8rem;
 }
 
-dl.topics_list {
+.topics_list {
     background:#fff;
     margin-bottom: 20px;
 }
 
-dl.topics_list {
+.topics_list p {
     padding: 5px;
 }
-.topics_list dt{
+.topics_list p{
     line-height: 110%;
 }
-.topics_list dd{
-    line-height: 130%;
-}
+
+
+
+
 /* 明美学園　概要ページへリンクバナー */
 .overview_banner {
     margin:0 auto;
@@ -386,19 +387,90 @@ dl.topics_list {
 /* 入園をご検討中の皆さまへ */
 .guide_content {
     margin:0 auto;
-    margin:10px;
-    padding:20px;
+    margin: 10px;
+    padding:20px 20px 0 20px;
 }
 
 .guide_content h2{
     font-size: 1rem;
-    border-bottom: solid 1px #000;
+    border-bottom: solid 1px #333;
+    padding-bottom: 10px;
 }
-.guide_content ul li{
- list-style:none;
- border-bottom: dashed 1px #000;
- text-align:center;
+.guide_list_item {
+    display:block;
+    text-align:center;
+    border-bottom:1px solid #333;
+    padding:10px 0;
 }
-.guide_content {
+.guide_list_item:hover {
+    opacity:0.8;
+    transition:0.7s;
+    background:rgb(197, 197, 197); 
+} 
 
+/* 資料請求ボタン */
+.guide_btn_content {
+    margin:0 auto;
+    margin:10px;
+    padding:10px 20px 20px 20px;
+}
+
+.guide_btn a{
+    display:block;
+    font-size: 1rem;
+    background:#34aa9a;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align:center;
+}
+.guide_btn_content:hover {
+    opacity: 0.8;
+    background:#fff;
+    transition:.7s
+
+}
+/* フッターコンテンツ */
+.footer_logo {
+    /* background:rgb(255, 162, 162); */
+    text-align: center;
+    position: relative; 
+    margin-top:10px;
+    margin-bottom:20px;
+    background:#684e4d;
+    color: #fff;
+}
+
+
+.footer_logo_mark a{
+    display:inline-block;
+    font-size:1rem;
+    margin-top:10px;
+}
+
+.footer_logo_icon {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.footer_logo_icon img{
+    width:2.2rem;
+    height:2.2rem;
+}
+
+p.footer_text {
+    display: inline;
+    vertical-align:bottom;
+    color:#fff;
+}
+
+.footer_akemigakuen h1 {
+    font-size:1.5rem;
+}
+.footer_akemigakuen p {
+    font-size:0.8rem;
+}
+.copyright {
+/* padding: 20px; */
+padding:10px 0 15px 0;
 }
