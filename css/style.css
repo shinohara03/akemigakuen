@@ -317,6 +317,8 @@ p.look{
 /* 最近の出来事　1段目 */
 /* 最近の出来事　2段目 */
 
+
+
 .topics_content {
     margin:0 auto;
     margin:10px;
@@ -367,6 +369,11 @@ p.look{
 .topics_list p{
     line-height: 130%;
 }
+
+.topics_contentbox ul li{
+    list-style:none;
+}
+
 
 
 
@@ -471,6 +478,13 @@ padding:10px 0 15px 0;
 }
 
 
+
+
+
+
+
+
+
 @media screen and (min-width: 767px) { /*ウィンドウ幅が最大767px以上の場合に適用*/
   
     /* スライドショー  */
@@ -520,8 +534,9 @@ padding:10px 0 15px 0;
 }
 
 .information_content {
+    /* flex:1; */
     width:300px;
-    padding:10px;
+    padding:20px;
     margin:0;
  }
 
@@ -531,8 +546,7 @@ padding:10px 0 15px 0;
 
 .info_wrapper {
     background: rgb(255, 221, 159);
-    flex: 1;
-    width:300px;
+    width:400px;
     height: 600px;
     margin-right: 20px;
 }
@@ -562,24 +576,40 @@ padding:10px 0 15px 0;
     margin-bottom: 20px;
 }
 
+/* ボタン */
+.information_content  {
+    position:relative;
+}
+.more_btn.info_pc {
+    position:relative;
+    left:90px;
+    top:-450px;
+}
+
 /* 最近の出来事 */
 .topics_content{
     padding:10px;
     margin:0;
 }
-
+.topics_wrapper {
+         display:flex;
+}
 .topics_header {
     float:left;
- }
+}
+ .topics_wrapper {
+    display:flex;
+}
 
 .topicsA_content {
     background: rgb(206, 255, 166);
-    width: 100%;
+    width: 700px;
     height: 300px;
+    margin-bottom: 30px;
 }
 .topicsB_content {
     background: rgb(135, 231, 255);
-    width: 100%;
+    width: 700px;
     height: 300px;
 }
 .coloumn {
@@ -587,15 +617,52 @@ padding:10px 0 15px 0;
     flex-direction:column;
 }
 
+.topics_contentbox img {
+    width: 200px;
+}
+.topics_contentbox p {
+    width: 200px;
+}
+
+.icon_tree img{
+    width:3.5rem;
+    height:3.5rem;
+    text-align:center;
+}
+
 /* 文字サイズ */
 .topics_head li {
-    line-height: 1.3rem;
+    line-height: 1.8rem;
 }
 .topics_1line {
-    font-size: 1rem;
+    font-size: 1.7rem;
 }
 .topics_2line {
-    font-size: 0.8rem;
+    font-size: 1rem;
+}
+
+.topics_contentbox {
+    padding:5px;
+}
+
+/* ボタン */
+/* .topics_content  {
+    position:relative;
+} */
+.more_btn .topicA_pc {
+    position:relative;
+    left:90px;
+    top:-450px;
+}
+
+
+.topicsB_content {
+    position:relative;
+}
+
+.more_btn.topicsB_pc {
+    position:relative;
+    bottom:470px;
 }
 
 
@@ -604,17 +671,6 @@ padding:10px 0 15px 0;
 
 
 
-     /* ナビゲーション */
-    
-
-     .topics_wrapper {
-         display:flex;
-     }
-    
-   
-
-
-  
 
 
 
