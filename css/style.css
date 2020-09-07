@@ -96,6 +96,7 @@ p.text {
 }   
 #nav_humberger ul li{
     list-style-type:none;
+    border-bottom:1px solid #ccc;
 }   
 
 #nav_humberger ul li a{
@@ -103,7 +104,6 @@ p.text {
        display:block;
        background-color:#333;
        color:#fff;
-       border-bottom:1px solid #ccc;    
        text-align:center;
        padding:10px 0px 10px 0px;
        text-decoration:none;
@@ -502,38 +502,90 @@ font-size:0.7rem;
         height: auto;
       }
       .slideshow {
-        margin-top: 100px;
+        margin-top: 130px;
     }
 
     /* ナビゲーション */
-      #humberger_btn {
-        display:none;
-      }
+#humberger_btn {
+    display:none;
+}
 
-    .navigation_content {
-        text-align:center;
-    }
-    .navigation_content li {
-        display:inline-block;
-        background:none;
-        margin:10px;
- 
-    }
-    #nav_humberger {
-        position:absolute;
-        top: 20%;
-        bottom: 100%;
-    }
+.navigation_content {
+    text-align:center;
+}
+.navigation_content li {
+    display:inline-block;
+    margin:10px;
+}
+#nav_humberger {
+    position:absolute;
+    top: 18%;
+    bottom: 100%;
+}
 
-   #nav_humberger ul li a{
-        width:100%;
-        background-color:transparent !important;
-        color:#333 !important;
-        text-align:center;
-        padding:10px 0px 10px 0px;
-        text-decoration: none !important;
-     }
 
+#nav_humberger ul{
+    margin: 10px 50px;
+    border-top:dashed 3px #1d1d1d; 
+    border-bottom:dashed 3px #1d1d1d;
+}
+.dashed-line1 {
+    height: 1px;
+      position: relative;
+      margin: 10px 50px;
+  }
+.dashed-line1::before {
+    content: "";
+    background-image: linear-gradient(to right, #000, #000 10px, transparent 10px, transparent 8px);
+    background-size: 20px 1px;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.dashed-line2 {
+    height: 1px;
+    position: relative;
+    margin: 10px 50px;
+  }
+
+.dashed-line2::before {
+    content: "";
+    background-image: linear-gradient(to right, #000, #000 10px, transparent 10px, transparent 8px);
+    background-size: 20px 1px;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+#nav_humberger ul li{
+    border-bottom:none;
+}   
+
+#nav_humberger ul li a{
+    width:100%;
+    border-bottom: none;
+    background-color: #f1f0ec !important;
+    background-color:transparent !important;
+    color:#333 !important;
+    text-align:center;
+    padding:10px 0px 10px 0px;
+    font-size:1.1rem;
+    font-weight: bold;
+}
+#nav_humberger ul li a:hover{
+    opacity:0.7;
+    background:#fff;
+    transition:.7s;
+}
+     
 
 /* メイン　2 カラム*/
 /* お知らせ */
@@ -553,7 +605,7 @@ font-size:0.7rem;
  }
 
 .info_wrapper {
-    background: rgb(255, 221, 159);
+    /* background: rgb(255, 221, 159); */
     width:400px;
     height: 600px;
     margin-right: 20px;
@@ -596,7 +648,6 @@ font-size:0.7rem;
 }
 .info_pc {
     position:relative;
-    /* left:90px; */
     bottom:550px;
 }
 
@@ -613,13 +664,13 @@ font-size:0.7rem;
 }
 
 .topicsA_content {
-    background: rgb(206, 255, 166);
+    /* background: rgb(206, 255, 166); */
     width: 700px;
     height: 300px;
     margin-bottom: 10px;
 }
 .topicsB_content {
-    background: rgb(135, 231, 255);
+    /* background: rgb(135, 231, 255); */
     width: 700px;
     height: 300px;
 }
