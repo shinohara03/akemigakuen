@@ -365,13 +365,13 @@ article.topics_title {
 
 
 /* 入園をご検討中の皆さまへ */
-.guide_content {
+.guide_wrapper{
     margin:0 auto;
     margin: 10px;
     padding:20px 20px 0 20px;
 }
 
-.guide_content h2{
+.guide_wrapper h2{
     font-size: 1rem;
     border-bottom: solid 1px #333;
     padding-bottom: 10px;
@@ -388,6 +388,16 @@ article.topics_title {
     transition:0.7s;
     background:rgb(197, 197, 197); 
 } 
+
+.guide_list1 ul,
+.guide_list2 ul,
+.guide_list3 ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+
 
 /* 資料請求ボタン */
 .guide_btn_content {
@@ -410,12 +420,12 @@ article.topics_title {
     padding: 10px;
     text-align:center;
 }
-.guide_btn_content:hover {
+.guide_btn:hover {
     opacity: 0.8;
     background:#fff;
     transition:.7s
-
 }
+
 /* フッターコンテンツ */
 .footer_logo {
     /* background:rgb(255, 162, 162); */
@@ -459,7 +469,6 @@ p.footer_text {
 padding:10px 0 15px 0;
 font-size:0.7rem;
 }
-
 
 
 
@@ -619,25 +628,82 @@ article.topics_title {
 
 /* 入園をご検討中の皆さまへ ここから */
 
+.guide_wrapper {
+    margin:0 auto;
+    margin:30px;
+}
+.guide_content {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
 
 
+.guide_wrapper h2 {
+    font-size:1.8rem;
+    font-weight:bold;
+    text-align:left;
+    border-bottom: 1px solid #000;
+    margin:30px;
+}
+
+.guide_content {
+    padding:0;
+    text-align:left;
+}
+
+li.guide_list_item {
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px dashed #000;
+    padding: 20px 20px 20px 0;
+}
 
 
+.guide_content li:nth-child(even){
+    border:none;
+}
+
+.guide_list1,
+.guide_list2,
+.guide_list3 {
+    border-right: 1px solid #000;
+    padding-right: 60px;
+    width:300px;
+    margin:10px;
+}
+
+.guide_list3:nth-child(3){
+    border-right:none;
+    }
 
 
+/* 資料請求ボタン */
+.guide_btn_content {
+    margin:0 auto;
+    margin:10px;
+    padding:10px 20px 20px 20px;
+    
+}
+.guide_btn p a{
+    font-size:1rem;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
+.guide_btn a{
+    display:block;
+    font-size: 1rem;
+    background:#34aa9a;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align:center;
+}
+.guide_btn:hover {
+    opacity: 0.8;
+    background:#fff;
+    transition:.7s
+}
 
 
 
