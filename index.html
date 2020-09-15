@@ -25,14 +25,14 @@
                         <p>認定こども園<br/>あけみ保育園・あけみ幼稚園</p>
                     </div>
             </div>
-            <!-- ナビゲーション -->
+            <!-- スマホ用ナビゲーション　ハンバーガーメニュー -->
                 <div id="humberger_btn">
                     <span class="inner_line" id="line_1"></span>
                     <span class="inner_line" id="line_2"></span>
                     <span class="inner_line" id="line_3"></span>
                 </div>
-            <div class="dashed-line1"></div>
-                <nav class="navigation_content" id="nav_humberger">
+           
+                <nav id="nav_humberger">
                     <ul>
                         <li class="nav_list"><a href="#">ホーム</a></li>
                         <li class="nav_list"><a href="#">当園について</a></li>
@@ -42,42 +42,52 @@
                         <li class="nav_list"><a href="#">交通の案内</a></li>
                     </ul>
                 </nav> 
-            <div class="dashed-line2"></div>       
+            <!-- PC用ナビゲーション　通常 -->
+            <hr>
+                    <nav class="navigation_content">
+                    <ul>
+                        <li class="nav_list"><a href="#">ホーム</a></li>
+                        <li class="nav_list"><a href="#">当園について</a></li>
+                        <li class="nav_list"><a href="#">年間行事<br>
+                            園の生活</a></li>
+                        <li class="nav_list"><a href="#">入園の案内</a></li>
+                        <li class="nav_list"><a href="#">お問い合わせ</a></li>
+                        <li class="nav_list"><a href="#">交通の案内</a></li>
+                    </ul>
+                </nav> 
+            <hr>
         </header>
         <!-- スライドショ -->
-        <div class="slideshow"> 
+        <div class="slideshow clear"> 
         <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/slider_kindergarten_1.jpg" art=""></div>
-            <div class="swiper-slide"><img src="img/slider_kindergarten_2.jpg" art=""></div>
-            <div class="swiper-slide"><img src="img/slider_child_4.jpg" art=""></div>
-            <div class="swiper-slide"><img src="img/slider_child_2.jpg" art=""></div>
-            <div class="swiper-slide"><img src="img/slider_oekaki.jpg" art=""></div>
-            <div class="swiper-slide"><img src="img/slider_child_1.jpg" art=""></div>
-            <div class="swiper-slide"><img src="img/slider_child_3.jpg" art=""></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/slider_kindergarten_1.jpg" art=""></div>
+                <div class="swiper-slide"><img src="img/slider_kindergarten_2.jpg" art=""></div>
+                <div class="swiper-slide"><img src="img/slider_child_4.jpg" art=""></div>
+                <div class="swiper-slide"><img src="img/slider_child_2.jpg" art=""></div>
+                <div class="swiper-slide"><img src="img/slider_oekaki.jpg" art=""></div>
+                <div class="swiper-slide"><img src="img/slider_child_1.jpg" art=""></div>
+                <div class="swiper-slide"><img src="img/slider_child_3.jpg" art=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
-
         <!-- お知らせここから -->
         <div class="main_content">
             <!-- お知らせ -->
-            <div class="info_wrapper">
+            <!-- <div class="info_wrapper"> -->
                 <section>
                     <div class="information_content">
-                            <div class="information_header">
-                                <span class="icon_info"><img src="img/oshirase.png" art="お知らせマーク"></span>
-                                <span class="info_head"> 
-                                    <li class="info_1line">お知らせ</li>
-                                    <li class="info_2line">INFORMATION</li>
-                                </span>
-                            </div>
-        
+                        <article class="info_title">
+                            <h2>お知らせ<br>
+                                <span>INFORMATION</span>
+                            </h2>
+                            </article>
                             <div class="information_textbox clear">
                                 <dl>
                                     <dt>2020.xx.xx</dt>
@@ -122,38 +132,38 @@
                             </div>
                     </div>
                 </section>
-            </div>
+            <!-- </div> -->
            
-            <!--  最近の出来事A-->
-            <div class="coloumn">
-                <div class="topicsA_content">
-                    <section>
+             <!-- *********************
+                    最近の出来事A
+                *************************:-->
+            <div class="column">
+                    <section class="topicsA_content">
                         <div class="topics_content clear">
-                                <div class="topics_header">
-                                    <span class="icon_tree"><img src="img/kinominoki.png" art="トピックスマーク"></span>
-                                    <span class="topics_head"> 
-                                        <li class="topics_1line">最近の出来事</li>
-                                        <li class="topics_2line">TOPICS</li>
-                                    </span>
-                                </div>
+                            <article class="topics_title">
+                                <h2>最近の出来事<br>
+                                    <span>TOPICS</span>
+                                </h2>
+                            </article>
+                               
                             <div class="topics_wrapper clear">
-                                    <div class="topics_contentbox clear">
+                                    <div class="topics_contentbox">
                                             <figure><img src="img/topics_soumen.jpg" alt="流しそうめん"></figure>
-                                            <div class="topics_list">
+                                            <div class="topics_text">
                                                 <p>2020.xx.xx<br/>
                                                     恒例流しそうめん</p>
                                             </div>
                                     </div>
                                     <div class="topics_contentbox">
                                         <figure><img src="img/topics_camp.jpg" alt="サマーキャンプ"></figure>
-                                        <div class="topics_list">
+                                        <div class="topics_text">
                                             <p>2020.xx.xx<br/>
                                                 サマーキャンプ</p>
                                         </div>
                                     </div>
                                     <div class="topics_contentbox">
                                         <figure><img src="img/topics_otomari.jpg" alt="１泊２日のお泊まり会"></figure>
-                                        <div class="topics_list">
+                                        <div class="topics_text">
                                             <p>2020.xx.xx<br/>
                                                 １泊２日のお泊まり会</p>
                                         </div>
@@ -165,36 +175,35 @@
                                     </div>
                         </div>
                     </section>
-                </div>
-                <!-- 最近の出来事B-->
-                <div class="topicsB_content">
-                    <section>
-                            <div class="topics_content clear">
-                                <div class="topics_header">
-                                    <span class="icon_tree"><img src="img/kinominoki.png" art="トピックスマーク"></span>
-                                    <span class="topics_head"> 
-                                        <li class="topics_1line">クラスレポート</li>
-                                        <li class="topics_2line">TOPICS</li>
-                                    </span>
-                                </div>
-                                <div class="topics_wrapper clear">
+                <!-- *********************
+                    最近の出来事B
+                *************************:-->
+                    <section class="topicsB_content">
+                        <div class="topics_content clear">
+                            <article class="topics_title">
+                                <h2>クラスレポート<br>
+                                    <span>TOPICS</span>
+                                </h2>
+                            </article>
+                                
+                                <div class="topics_wrapper">
                                     <div class="topics_contentbox">
                                             <figure><img src="img/topics_hasami.jpg" alt="ハサミのおけいこ"></figure>
-                                            <div class="topics_list">
+                                            <div class="topics_text">
                                                 <p>2020.xx.xx<br/>
-                                                    ハサミのおけいこ</p>
+                                                    ハサミのおけいこ
                                             </div>
                                     </div>
                                     <div class="topics_contentbox">
                                         <figure><img src="img/topics_enogu.jpg" alt="絵具でお絵かき"></figure>
-                                        <div class="topics_list">
+                                        <div class="topics_text">
                                             <p>2020.xx.xx<br/>
                                                 絵具でお絵かき</p>
                                         </div>
                                     </div>
                                     <div class="topics_contentbox">
                                         <figure><img src="img/origami.jpg" alt="おりがみで遊ぼう"></figure>
-                                        <div class="topics_list">
+                                        <div class="topics_text">
                                             <p>2020.xx.xx<br/>
                                                 おりがみで遊ぼう</p>
                                         </div>
@@ -206,7 +215,6 @@
                                     </div>
                             </div>
                         </section>
-                    </div>
             </div>
         </div>
 
@@ -284,7 +292,7 @@
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: { 
-        delay: 4000,//秒数の指定
+        delay: 6000,//秒数の指定
         disableOnInteraction: false,
       },
       pagination: {
