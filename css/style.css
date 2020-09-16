@@ -2,7 +2,7 @@
 
 html {
     font-size: 16px;
-    font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-family: 'Arial',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
     background: #f1f0ec;
     color:#333;
 }
@@ -218,10 +218,10 @@ body {
 /* スライダー矢印・丸　色 */
 .swiper-button-next:after, 
 .swiper-button-prev:after {
- color:#0061c9 !important;
+ color:#34aa9a !important;
 }
 :root {
-    --swiper-theme-color: #0061c9 !important;
+    --swiper-theme-color: #34aa9a !important;
 }
 
 
@@ -264,25 +264,13 @@ article.info_title {
 }
 
 
-/* スクロールバーの色の変更　変更できない調査する */
-.information_textbox::-webkit-scrollbar-track {
-    border-radius: 10px;
-	background: #f2f2f2;
-}
-
-.information_textbox::-webkit-scrollbar-thumb{
-    border-radius: 10px;
-	background:#00596170;
-}
-/* スクロールバーの色の変更　変更できない調査する */
-
-
 .information_textbox dl {
     border-bottom:2px dashed #333;
     margin:20px 0;
 }
 .information_textbox dt {
     font-size:0.8rem;
+    color:#34aa9a;
 }
 .information_textbox dd {
     margin-bottom:10px;
@@ -349,8 +337,9 @@ article.topics_title {
     padding: 5px;
     line-height: 1.5;
 }
-
-
+.topics_text span {
+    color:#34aa9a;
+}
 
 
 
@@ -359,21 +348,22 @@ article.topics_title {
 /* 明美学園　概要ページへリンクバナー */
 .overview_banner {
     margin:0 auto;
-    margin:10px;
-    padding:20px;
+    margin:30px;
 }
 
 
 /* 入園をご検討中の皆さまへ */
 .guide_wrapper{
     margin:0 auto;
-    margin: 10px;
-    padding:20px 20px 0 20px;
+    margin: 20px 30px 30px 30px;
+    padding:10px;
+    background: #fff;
+
 }
 
 .guide_wrapper h2{
     font-size: 1rem;
-    border-bottom: solid 1px #333;
+    border-bottom: solid 3px #af8382;
     padding-bottom: 10px;
 }
 .guide_list_item {
@@ -396,14 +386,16 @@ article.topics_title {
     margin: 0;
 }
 
-
+.guide_list_item span {
+    display:none;
+}  
 
 
 /* 資料請求ボタン */
 .guide_btn_content {
     margin:0 auto;
     margin:10px;
-    padding:10px 20px 20px 20px;
+    padding:10px 20px 0 20px;
     
 }
 .guide_btn p a{
@@ -501,9 +493,8 @@ font-size:0.7rem;
 
 hr {
     display:block;
-    border-top: 5px dashed #8c8b8b;
-    border-bottom: 5px dashed #fff;
-    margin:0 50px;
+    border-top: 2px dashed #c1af7d;
+    margin:10px 60px;
 }
 
 .navigation_content ul li{
@@ -511,6 +502,7 @@ hr {
     display:inline;
     vertical-align:middle;
     margin-right: 30px;
+    padding:30px;
 }
 
 .navigation_content ul li a{
@@ -519,6 +511,14 @@ hr {
     line-height:1.3;
     padding:15px 0;
 }
+
+.navigation_content ul li a:hover{
+    color: #af8382;
+    opacity:0.7;
+    transition:.7s;
+}
+
+
 
 
 
@@ -630,8 +630,10 @@ article.topics_title {
 
 .guide_wrapper {
     margin:0 auto;
-    margin:30px;
+    margin:70px;
+    background: #fff;
 }
+
 .guide_content {
     display:flex;
     justify-content:space-between;
@@ -643,9 +645,11 @@ article.topics_title {
     font-size:1.8rem;
     font-weight:bold;
     text-align:left;
-    border-bottom: 1px solid #000;
-    margin:30px;
+    border-bottom: solid 3px #af8382;
+    margin-bottom:10px;
 }
+
+
 
 .guide_content {
     padding:0;
@@ -655,8 +659,9 @@ article.topics_title {
 li.guide_list_item {
     text-align: left;
     font-size: 1rem;
-    border-bottom: 1px dashed #000;
+    border-bottom: 1px dashed #333;
     padding: 20px 20px 20px 0;
+    
 }
 
 
@@ -667,8 +672,8 @@ li.guide_list_item {
 .guide_list1,
 .guide_list2,
 .guide_list3 {
-    border-right: 1px solid #000;
-    padding-right: 60px;
+    border-right: 1px solid #333;
+    padding-right: 30px;
     width:300px;
     margin:10px;
 }
@@ -677,18 +682,27 @@ li.guide_list_item {
     border-right:none;
     }
 
+.guide_list_item span {
+    display:block;
+    color:#34aa9a;
+    font-size:1.5rem;
+    font-weight: bold;
+    float:right;
+    text-align:center;
+    line-height:0.9;
+}  
+
+
 
 /* 資料請求ボタン */
 .guide_btn_content {
     margin:0 auto;
-    margin:10px;
-    padding:10px 20px 20px 20px;
-    
-}
-.guide_btn p a{
-    font-size:1rem;
+    margin:10px 50px 10px 50px;    
 }
 
+.guide_btn p a{
+    font-size:1.8rem;
+}
 
 .guide_btn a{
     display:block;
@@ -698,11 +712,6 @@ li.guide_list_item {
     border-radius: 5px;
     padding: 10px;
     text-align:center;
-}
-.guide_btn:hover {
-    opacity: 0.8;
-    background:#fff;
-    transition:.7s
 }
 
 
