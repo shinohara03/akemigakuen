@@ -2,7 +2,7 @@
 
 html {
     font-size: 16px;
-    font-family: 'Arial',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+    font-family: "Impact,Charcoal","ＭＳ ゴシック",sans-serif;
     background: #f1f0ec;
     color:#333;
 }
@@ -40,6 +40,13 @@ hr {
     display: block;
     clear: both;	
 }
+
+.box-shadow{
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+}
+
+
+
 /* ヘッダーコンテンツ */
 
 .header_logo {
@@ -134,7 +141,6 @@ p.text {
         cursor: pointer;
         transition: .1s;
         z-index: 3;
-        
     }
 
 
@@ -358,7 +364,6 @@ article.topics_title {
     margin: 20px 30px 30px 30px;
     padding:10px;
     background: #fff;
-
 }
 
 .guide_wrapper h2{
@@ -580,7 +585,6 @@ article.info_title {
     display:flex;
     box-sizing: border-box;
     max-width: 100%;
-    /* margin-bottom:0; */
     padding: 0;
     margin: 0;
 }
@@ -603,6 +607,8 @@ article.topics_title {
     padding-left: 60px;
     line-height:90%;
 }
+
+
 .topics_title span {
     font-size:1rem;
 }
