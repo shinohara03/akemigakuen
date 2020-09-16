@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>明美学園</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+    <div class="wrapper clear">
+        <header>
+            <!-- ロゴ -->
+            <div class="header_logo">
+                <div class="logo_mark">
+                    <a href="#">
+                            <span class="logo_icon"><img src="img/logo.png" alt="ロゴマーク">
+                        </span>
+                        <p class="text">AKEMI</p>
+                    </a>
+                </div>
+                    <div class="akemigakuen">
+                        <h1>明美学園</h1>
+                        <p>認定こども園<br/>あけみ保育園・あけみ幼稚園</p>
+                    </div>
+            </div>
+            <!-- スマホ用ナビゲーション　ハンバーガーメニュー -->
+                <div id="humberger_btn">
+                    <span class="inner_line" id="line_1"></span>
+                    <span class="inner_line" id="line_2"></span>
+                    <span class="inner_line" id="line_3"></span>
+                </div>
+           
+                <nav id="nav_humberger">
+                    <ul>
+                        <li class="nav_list"><a href="#">ホーム</a></li>
+                        <li class="nav_list"><a href="#">当園について</a></li>
+                        <li class="nav_list"><a href="#">年間行事・園の生活</a></li>
+                        <li class="nav_list"><a href="#">入園の案内</a></li>
+                        <li class="nav_list"><a href="#">お問い合わせ</a></li>
+                        <li class="nav_list"><a href="#">交通の案内</a></li>
+                    </ul>
+                </nav> 
+            <!-- PC用ナビゲーション　通常 -->
+            <hr>
+                    <nav class="navigation_content">
+                    <ul>
+                        <li class="nav_list"><a href="#">ホーム</a></li>
+                        <li class="nav_list"><a href="#">当園について</a></li>
+                        <li class="nav_list"><a href="#">年間行事<br>
+                            園の生活</a></li>
+                        <li class="nav_list"><a href="#">入園の案内</a></li>
+                        <li class="nav_list"><a href="#">お問い合わせ</a></li>
+                        <li class="nav_list"><a href="#">交通の案内</a></li>
+                    </ul>
+                </nav> 
+            <hr>
+        </header>
+
+        <section>
+            <div class="about_content">
+                <article class="about_title">
+                    <h2>当園について<br>
+                        <span>ABOUT</span>
+                    </h2>
+
+                    <h3>園の特色</h3>
+                    <p>何よりも都会の中にあって自然に親しめる楽しい幼稚園でありたい、そして子ども一人ひとりを大切にしたきめこまやかな教育を通して、自信を持った明るく元気な子どもとして育ってほしいと願っています。</p>
+
+
+                    <h3>給食</h3>
+                    <table class="lunch">
+                        <tr>
+                            <th>月、火、金曜日</th><td>給食弁当</td>                           
+                        </tr>
+                        <tr>
+                            <th>水曜日</th><td>パン給食</td>                           
+                        </tr>
+                        <tr>
+                            <th>木曜日</th><td>手作り弁当</td>                           
+                        </tr>
+                        <tr>
+                            <th>月1回</th><td>誕生日会にケーキ</td>                           
+                        </tr>
+                    </table>
+
+                    <h3>その他</h3>
+                    <p>体育あそびは月1〜3回、音楽・造形あそびは2ヶ月に1回あります。専門講師をお願いして、指導を受けています。課外教室として音楽教室があります。</p>
+
+                </article>
+            </div>
+        </section>
+
+
+       
+        <!-- フッターここから -->
+        <footer>
+            <div class="footer_logo">
+                <div class="footer_logo_mark">
+                    <a href="#">
+                            <span class="footer_logo_icon"><img src="img/logo.png" alt="ロゴマーク">
+                        </span>
+                        <p class="footer_text">AKEMI</p>
+                    </a>
+                </div>
+                    <div class="footer_akemigakuen">
+                        <h1>明美学園</h1>
+                        <p>認定こども園<br/>あけみ保育園・あけみ幼稚園</p>
+                    </div>
+            
+                <div class="copyright">
+                    <small><p>Copyright © Akemi Educational Institution. All Rights Reserved.</div></p></small>
+                </div>
+        </footer>
+   
+
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+    // ハンバーガーメニュー
+        function humberger () {
+            document.getElementById("line_1").classList.toggle("line1");
+            document.getElementById("line_2").classList.toggle("line2");
+            document.getElementById("line_3").classList.toggle("line3");
+            document.getElementById("nav_humberger").classList.toggle("fadein");
+        }
+        document.getElementById("humberger_btn").addEventListener("click",function(){
+            humberger();
+        });
+
+
+    // スライドショー 
+
+        var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: { 
+        delay: 6000,//秒数の指定
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    </script>
+</body>
+</html>
+
