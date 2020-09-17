@@ -1,24 +1,93 @@
-
-
-
+@charset "utf-8";
 
 
 /* 当園について */
+
+.about_wrapper {
+    margin:0 auto;
+    margin:10px;
+    padding:20px;
+}
+
+
+h2.about_title {
+    background-size:42px;
+    font-size:1rem;
+    font-weight:bold;
+    line-height:1;
+    letter-spacing: 0.2rem;
+    margin-bottom:20px;
+    padding-left:10px;
+}
+.about_title span {
+    font-size: 0.9rem;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.about_content p{
+    font-size:0.8rem;
+    line-height:1.4;
+    margin-bottom:20px;
+    padding:0 10px;
+}
+
+h3.about_text_title {
+    background:#b4c6e7;
+    padding:10px;
+    margin:20px 0;
+    font-size:1rem;
+    font-weight:bold;
+}
+
+
+
 table{
     border-collapse: collapse;
-    max-width:100%;
-    
+    margin: 0;
+    width:100%;
+    margin-bottom:20px;
 }
+
 .lunch th,td{
     border: solid 1px #333;
     padding:10px;
+    font-size: 0.8rem;
 }
 .lunch th{
     width:30%;
+    background:#ecf5d9;
+    text-align: left;
 }
 .lunch td{
     width:70%;
 }
+
+@media screen and (min-width: 767px) { /*ウィンドウ幅が最大767px以上の場合に適用*/
+    table{
+        width: 100%;
+    }
+    h2.about_title {
+        background-size:42px;
+        font-size:1.5rem;
+    }
+    .about_content p{
+        font-size: 1rem;
+
+    }
+    
+    h3.about_text_title {
+        font-size:1.3rem;
+
+    }
+    .lunch th,td{
+        border: solid 1px #333;
+        padding:10px;
+        font-size: 1rem;
+    }
+}
+
+
 
 
 

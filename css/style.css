@@ -551,13 +551,13 @@ article.info_title {
     background:url(../img/oshirase.png) no-repeat;
     background-size:55px;
     height:50px;
-    font-size:1.8rem;
+    font-size:1.5rem;
     font-weight:bold;
     padding-left: 70px;
     line-height:90%;
 }
 .info_title span {
-    font-size:1rem;
+    font-size:0.9rem;
     font-weight:bold;
     display:inline-block;
 }
@@ -602,7 +602,7 @@ article.topics_title {
     background:url(../img/kinominoki.png) no-repeat;
     background-size:55px;
     height:50px;
-    font-size:1.8rem;
+    font-size:1.5rem;
     font-weight:bold;
     padding-left: 60px;
     line-height:90%;
@@ -610,7 +610,7 @@ article.topics_title {
 
 
 .topics_title span {
-    font-size:1rem;
+    font-size:0.9rem;
 }
 
 
@@ -648,7 +648,7 @@ article.topics_title {
 
 
 .guide_wrapper h2 {
-    font-size:1.8rem;
+    font-size:1.5rem;
     font-weight:bold;
     text-align:left;
     border-bottom: solid 3px #af8382;
@@ -707,7 +707,7 @@ li.guide_list_item {
 }
 
 .guide_btn p a{
-    font-size:1.8rem;
+    font-size:1.5rem;
 }
 
 .guide_btn a{
