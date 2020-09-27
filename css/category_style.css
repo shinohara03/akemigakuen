@@ -1,115 +1,257 @@
 @charset "utf-8";
 
+/* 共通 */
+
+
 
 /* 当園について */
 
 .about_wrapper {
-    margin:0 auto;
-    margin:10px;
-    padding:20px;
+    margin: 0 auto;
+    margin: 10px;
+    padding: 20px;
 }
-
 
 h2.about_title {
-    background-size:42px;
-    font-size:1rem;
-    font-weight:bold;
-    line-height:1;
+    background-size: 42px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
     letter-spacing: 0.2rem;
-    margin-bottom:20px;
-    padding-left:10px;
-}
-.about_title span {
-    font-size: 0.9rem;
-    font-weight:bold;
-    display:inline-block;
+    margin-bottom: 20px;
+    padding-left: 10px;
 }
 
-.about_content p{
-    font-size:0.8rem;
-    line-height:1.4;
-    margin-bottom:20px;
-    padding:0 10px;
+.about_title span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.about_wrapper p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    padding: 0 10px;
 }
 
 h3.about_text_title {
-    background:#b4c6e7;
-    padding:10px;
-    margin:20px 0;
-    font-size:1rem;
-    font-weight:bold;
+    background: #b4c6e7;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-
-
-table{
+table.lunch {
     border-collapse: collapse;
     margin: 0;
-    width:100%;
-    margin-bottom:20px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.lunch th,td{
+.lunch th {
+    width: 30%;
     border: solid 1px #333;
-    padding:10px;
-    font-size: 0.8rem;
-}
-.lunch th{
-    width:30%;
-    background:#ecf5d9;
+    background: #ecf5d9;
     text-align: left;
 }
-.lunch td{
-    width:70%;
+.lunch td {
+    border: solid 1px #333;
+    padding: 10px;
+    font-size: 0.8rem;
 }
 
-@media screen and (min-width: 767px) { /*ウィンドウ幅が最大767px以上の場合に適用*/
-    table{
-        width: 100%;
-    }
-    h2.about_title {
-        background-size:42px;
-        font-size:1.5rem;
-    }
-    .about_content p{
-        font-size: 1rem;
-
-    }
-    
-    h3.about_text_title {
-        font-size:1.3rem;
-
-    }
-    .lunch th,td{
-        border: solid 1px #333;
-        padding:10px;
-        font-size: 1rem;
-    }
+.lunch td {
+    width: 70%;
 }
 
 
 
 
+@media screen and (min-width: 767px) {
+/*ウィンドウ幅が最大767px以上の場合に適用*/
+table.lunch {
+    width: 80%;
+    margin: 0 auto;
+}
+h2.about_title {
+    background-size: 42px;
+    font-size: 1.5rem;
+}
+.about_content p {
+    font-size: 1rem;
+}
+h3.about_text_title {
+    font-size: 1.3rem;
+}
+.lunch th td {
+    border: solid 1px #333;
+    padding: 10px;
+    font-size: 1rem;
+}
+}
 
 
-/* 年間行事 園の生活 */
+/* 年間行事 */
+
+.event_schedule_wrapper {
+    margin: 0 auto;
+    margin: 10px;
+    padding: 20px;
+}
+
+h2.event_schedule_title{
+    background-size: 42px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.event_schedule_title span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.event_schedule_wrapper img{
+    border: solid 5px #fff;
+    width: 20%;
+    display:inline-block;
+}
+
+figure {
+    position: relative;
+}
+
+/* 写真の回転 */
+img.img_A {
+    position: relative;
+    top:0;
+    z-index: 0;
+    transform: rotate(3deg);
+}
+img.img_B {
+    position: relative;
+    top:0;
+    right:10px;
+    z-index:1;
+    transform: rotate(-6deg);
+}
+img.img_C {
+    position: relative;
+    top:0;
+    right:10px;
+    z-index:2;
+    transform: rotate(45deg);
+}
+img.img_D {
+    position: relative;
+    top:0;
+    right:10px;
+    z-index:3;
+    transform: rotate(-10deg);
+}
 
 
+.event_schedule_wrapper p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 20px 0;
+    /* margin-bottom: 20px; */
+    padding: 0 10px;
+}
+
+h3.event_schedule_text_title {
+    background: #b4c6e7;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.event_schedule {
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.event_schedule th {
+    width: 30%;
+    border: solid 1px #333;
+    background: #ecf5d9;
+    text-align: left;
+}
+.event_schedule td {
+    border: solid 1px #333;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.event_schedule th {
+    width: 20%;
+    background: #ecf5d9;
+    text-align: left;
+}
+
+.event_schedule td {
+    width: 80%;
+}
+
+/*1日の保育活動  */
+table.oneDay_schedule  {
+}
+
+.oneDay_schedule th {
+    width: 30%;
+    /* border: solid 1px #333; */
+    background: #ecf5d9;
+    text-align: left;
+}
+.oneDay_schedule td {
+    /* border: solid 1px #333; */
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.event_schedule th {
+    width: 20%;
+    background: #ecf5d9;
+    text-align: left;
+}
+
+.event_schedule td {
+    width: 80%;
+}
+
+
+
+
+
+@media screen and (min-width: 767px) {
+/*ウィンドウ幅が最大767px以上の場合に適用*/
+table.event_schedule,
+table.oneDay_schedule {
+    width: 80%;
+    margin: auto;
+}
+.event_schedule_wrapper p {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+}
 
 
 /* 入園の案内*/
 
 
-
-
-
 /* お問い合わせ */
 
 
-
-
 /* 交通の案内 */
-
-
-
-
