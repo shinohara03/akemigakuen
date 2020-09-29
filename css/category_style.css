@@ -123,7 +123,8 @@ h2.event_schedule_title{
 figure {
     position: relative;
     text-align: center;
-    margin:40px 0 50px 0;
+    margin:20px 0 20px 0;
+    width:100%;
 }
 
 /* 写真の回転 */
@@ -176,7 +177,6 @@ h3.event_schedule_text_title {
     font-size: 1rem;
     font-weight: bold;
 }
-
 .event_schedule {
     border-collapse: collapse;
     margin: 0;
@@ -184,21 +184,35 @@ h3.event_schedule_text_title {
     margin-bottom: 20px;
 }
 
-.event_schedule th {
-    width: 30%;
-    border: solid 1px #333;
-    background: #ecf5d9;
-    text-align: left;
+.event_schedule  {
+    border-collapse: separate;
 }
+.event_schedule th {
+    /* border: solid 1px #333; */
+    text-align: left;
+    padding: 10px;
+    color:#fff;
+    border-radius: 10px 0 0 10px;
+}
+/* 偶数の段落 */
+th.m1 {
+    background:#92ca06;
+  }
+/* 奇数の段落 */
+th.m2 {
+    background:#b8db60;
+  }
+
 .event_schedule td {
-    border: solid 1px #333;
+    /* border: solid 1px #333; */
     padding: 10px;
     font-size: 0.8rem;
+    background:#f6f6f6;
+    border-radius: 0 10px 10px 0;
 }
 
 .event_schedule th {
     width: 20%;
-    background: #ecf5d9;
     text-align: left;
 }
 
@@ -207,13 +221,11 @@ h3.event_schedule_text_title {
 }
 
 /*1日の保育活動  */
-table.oneDay_schedule  {
-}
+
 
 .oneDay_schedule th {
     width: 30%;
     /* border: solid 1px #333; */
-    background: #ecf5d9;
     text-align: left;
 }
 .oneDay_schedule td {
@@ -222,10 +234,12 @@ table.oneDay_schedule  {
     font-size: 0.8rem;
 }
 
-.event_schedule th {
+.oneDay_schedule th {
     width: 20%;
-    background: #ecf5d9;
+    color: #6e9a04;
+    font-weight: bold;
     text-align: left;
+    padding: 10px;
 }
 
 .event_schedule td {
