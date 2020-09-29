@@ -146,7 +146,7 @@ width: 10px;
 height: 22px;
 cursor: pointer;
 transition: .1s;
-z-index: 3;
+z-index: 30;
 }
 
 .inner_line {
@@ -613,6 +613,12 @@ article.topics_title {
 .topics_contentbox p {
     margin-bottom: 0;
 }
+.overview_banner img {
+    width: 90%;
+}
+
+
+
 /* ボタン */
 .topics_content {
     position: relative;

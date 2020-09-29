@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/* 共通 */
-
-
 
 /* 当園について */
 
@@ -125,35 +122,42 @@ h2.event_schedule_title{
 
 figure {
     position: relative;
+    text-align: center;
+    margin:40px 0 50px 0;
 }
 
 /* 写真の回転 */
 img.img_A {
     position: relative;
     top:0;
+    left:20px;
     z-index: 0;
-    transform: rotate(3deg);
+    transform: rotate(2deg);
+    margin-bottom: 0;
 }
 img.img_B {
     position: relative;
     top:0;
-    right:10px;
+    left: 10px;
     z-index:1;
-    transform: rotate(-6deg);
+    transform: rotate(10deg);
+    margin-bottom: 0;
 }
 img.img_C {
     position: relative;
     top:0;
     right:10px;
-    z-index:2;
-    transform: rotate(45deg);
+    z-index: 1;
+    transform: rotate(-10deg);
+    margin-bottom: 0;
 }
 img.img_D {
     position: relative;
     top:0;
-    right:10px;
-    z-index:3;
-    transform: rotate(-10deg);
+    right:20px;
+    z-index: 1;
+    transform: rotate(-2deg);
+    margin-bottom: 0;
 }
 
 
