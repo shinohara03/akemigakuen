@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="wrapper clear">
+        <header>
+            <!-- ロゴ -->
+            <div class="header_logo">
+                <div class="logo_mark"><a href="#"><span class="logo_icon"><img src="img/logo.png" alt="ロゴマーク"></span><p class="text">AKEMI</p></a></div>
+                <div class="akemigakuen">
+                    <h1>明美学園</h1>
+                    <p>認定こども園<br/>あけみ保育園・あけみ幼稚園</p>
+                </div>
+            </div>
+            <!-- スマホ用ナビゲーション ハンバーガーメニュー -->
+            <div id="humberger_btn"><span class="inner_line" id="line_1"></span><span class="inner_line" id="line_2"></span><span class="inner_line" id="line_3"></span></div>
+            <nav id="nav_humberger">
+                <ul>
+                    <li class="nav_list"><a href="#">ホーム</a></li>
+                    <li class="nav_list"><a href="about.html">当園について</a></li>
+                    <li class="nav_list"><a href="event_schedule.html">年間行事<br>園の生活</a></li>
+                    <li class="nav_list"><a href="information.html">入園の案内</a></li>
+                    <li class="nav_list"><a href="contact.html">お問い合わせ</a></li>
+                    <li class="nav_list"><a href="traffic guide.html">交通の案内</a></li>
+                </ul>
+            </nav> 
+        <!-- PC用ナビゲーション　通常 -->
+        <hr>
+                <nav class="navigation_content">
+                <ul>
+                    <li class="nav_list"><a href="#" target=”_blank”>ホーム</a></li>
+                    <li class="nav_list"><a href="about.html">当園について</a></li>
+                    <li class="nav_list"><a href="event_schedule.html">年間行事<br>園の生活</a></li>
+                    <li class="nav_list"><a href="information.html">入園の案内</a></li>
+                    <li class="nav_list"><a href="contact.html">お問い合わせ</a></li>
+                    <li class="nav_list"><a href="traffic guide.html">交通の案内</a></li>
+                </ul>
+            </nav> 
+        <hr>
+        </header>
+
+        <section>
+            <article class="contact_wrapper">
+                <h2 class="contact_title">お問い合わせ<br><span>CONTACT</span></h2>
+                <P>資料請求をご希望の方は、次のフォームに必要事項をご記入ください。</P>
+
+                <div class="contact">
+                    <form action="#" method="post">
+                        <dl>
+                            <dt><label for="name">名前：</label></dt>
+                            <dd>
+                                <input value="" type="text" id="name" name="name" placeholder="名前を入力してください">                            </dd>
+                            <dt><label for="postal code">郵便番号：</label></dt>
+                            <dd>
+                                <input value="" type="tel" id="postal code" name="postal code" placeholder="郵便番号を入力してください">
+                            </dd>
+                            <dt><label for="address">住所：</label></dt>
+                            <dd>
+                                <input value="" type="text" id="address" name="address"placeholder="住所を入力してください">
+                            </dd>
+                            <dt><label for="tel">電話番号：</label></dt>
+                            <dd>
+                                <input value="" type="text" id="tel" name="tel" placeholder="電話番号を入力してください">
+                            </dd>
+                            <dt><label for="comment">その他：</label></dt>
+                            <dd>
+                                <textarea id="comment" name="comment" placeholder="ご自由にご記入ください"></textarea>
+                            </dd>
+                        </dl>
+                        <button type="submit" class="btn">送信</button>
+                    </form>
+                </div>
+             </article>
+        </section>
+        
+        <section>
+            <article class="contact_wrapper">
+                <h2 class="contact_title">説明会ご予約<br><span>reservation</span></h2>
+                <P>まずは下記フォームへ必要事項をご入力ください。後日、担当者よりご連絡いたします。</P>
+
+                <div class="contact">
+                    <form action="#" method="post">
+                        <dl>
+                            <dt><label for="username">名前：</label></dt>
+                            <dd>
+                                <input value="" type="text" id="username" name="username" placeholder="名前を入力してください">                            </dd>
+                            <dt><label for="name">メールアドレス：</label></dt>
+                            <dd>
+                                <input type="email" id="mail" name="mail">
+                            </dd>
+                            <dt><label for="name">日時：</label></dt>
+                            <dd>
+                                <input type="data" id="name" name="username">
+                            </dd>
+                            <dt><label for="name">参加希望時間：</label></dt>
+                            <dd>
+                                <input type="text" id="name" name="username">
+                            </dd>
+                            <dt><label for="comment">その他：</label></dt>
+                            <dd>
+                                <textarea id="comment" name="comment" placeholder="ご自由にご記入ください"></textarea>
+                            </dd>
+                        </dl>
+                        <button type="submit" class="btn">送信</button>
+                    </form>
+                </div>
+             </article>
+        </section>
+
+
+
+        <!-- <section>
+                <article class="contact_wrapper">
+                    <h2 class="contact_title">説明会案内<br><span>CONTACT</span></h2>
+                    
+                    <div class="contact">
+                        <form action="comfirm.html" method="post">
+                            <P>説明会をご参加の方は、次のフォームに必要事項をご記入ください。</P>
+                            <ul>
+                                <li>
+                                    <label for="name">名前：</label>
+                                    <input type="text" id="name" name="username">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="name">メールアドレス：</label>
+                                    <input type="email" id="mail" name="mail">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="name">日時：</label>
+                                    <input type="text" id="name" name="username">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="name">参加希望時間：</label>
+                                    <input type="text" id="name" name="username">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="name">その他：</label>
+                                    <input type="text" id="name" name="username">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </article>
+        </section> -->
+
+
+
+
+
+        <!-- フッターここから -->
+        <footer>
+            <div class="footer_logo">
+                <div class="footer_logo_mark"><a href="#"><span class="footer_logo_icon"><img src="img/logo.png" alt="ロゴマーク"></span><p class="footer_text">AKEMI</p></a></div>
+                <div class="footer_akemigakuen">
+                    <h1>明美学園</h1>
+                    <p>認定こども園<br/>あけみ保育園・あけみ幼稚園</p>
+                </div>
+                <div class="copyright"><small><p>Copyright © Akemi Educational Institution. All Rights Reserved.</div></p></small></div>
+        </footer>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            // ハンバーガーメニュー
+            function humberger () {
+                document.getElementById("line_1").classList.toggle("line1");
+                document.getElementById("line_2").classList.toggle("line2");
+                document.getElementById("line_3").classList.toggle("line3");
+                document.getElementById("nav_humberger").classList.toggle("fadein");
+            }
+            
+            document.getElementById("humberger_btn").addEventListener("click", function() {
+                humberger();
+            }
+            
+            ); 
+            
+            // スライドショー 
+            var swiper=new Swiper('.swiper-container', {
+                spaceBetween: 30, centeredSlides: true, autoplay: {
+                    delay: 6000, //秒数の指定
+                    disableOnInteraction: false,
+                }
+                , pagination: {
+                    el: '.swiper-pagination', clickable: true,
+                }
+                , navigation: {
+                    nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev',
+                }
+                ,
+            }
+            
+            );
+        </script>
+</body>
+</html>
