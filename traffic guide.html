@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交通の案内</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="wrapper clear">
+        <header>
+            <!-- ロゴ -->
+            <div class="header_logo">
+                <div class="logo_mark"><a href="#"><span class="logo_icon"><img src="img/logo.png" alt="ロゴマーク"></span><p class="text">AKEMI</p></a></div>
+                <div class="akemigakuen">
+                    <h1>明美学園</h1>
+                    <p>認定こども園<br/>あけみ保育園・あけみ幼稚園</p>
+                </div>
+            </div>
+            <!-- スマホ用ナビゲーション ハンバーガーメニュー -->
+            <div id="humberger_btn"><span class="inner_line" id="line_1"></span><span class="inner_line" id="line_2"></span><span class="inner_line" id="line_3"></span></div>
+            <nav id="nav_humberger">
+                <ul>
+                    <li class="nav_list"><a href="#">ホーム</a></li>
+                    <li class="nav_list"><a href="about.html">当園について</a></li>
+                    <li class="nav_list"><a href="event_schedule.html">年間行事<br>園の生活</a></li>
+                    <li class="nav_list"><a href="information.html">入園の案内</a></li>
+                    <li class="nav_list"><a href="contact.html">お問い合わせ</a></li>
+                    <li class="nav_list"><a href="traffic guide.html">交通の案内</a></li>
+                </ul>
+            </nav> 
+        <!-- PC用ナビゲーション　通常 -->
+        <hr>
+                <nav class="navigation_content">
+                <ul>
+                    <li class="nav_list"><a href="#" target=”_blank”>ホーム</a></li>
+                    <li class="nav_list"><a href="about.html">当園について</a></li>
+                    <li class="nav_list"><a href="event_schedule.html">年間行事<br>園の生活</a></li>
+                    <li class="nav_list"><a href="information.html">入園の案内</a></li>
+                    <li class="nav_list"><a href="contact.html">お問い合わせ</a></li>
+                    <li class="nav_list"><a href="traffic guide.html">交通の案内</a></li>
+                </ul>
+            </nav> 
+        <hr>
+        </header>
+        <section>
+                <article class="traffic_guide_wrapper">
+                    <h2 class="traffic_guide_title">交通の案内<br><span>TRAFFIC GUIDE</span></h2>
+                    <h3 class="traffic_guide_text_title">幼稚園周辺図</h3>
+                    <div class="access_content">
+                        <table class="traffic_guide">
+                            <tr>
+                                <th>園名</th>
+                                <td>明美学園</td>
+                            </tr>
+                            <tr>
+                                <th>所在地</th>
+                                <td>〒532-0022<br>
+                                    大阪市淀川区野中南1丁目1番3号</td>
+                            </tr>
+                            <tr>
+                                <th>お問合せ</th>
+                                <td>TEL：06-1234-5678</td>
+                            </tr>
+
+                    
+                        </table>
+                    </div>
+                    
+                    <div class="map_content">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1735687636515!2d135.4833502503144!3d34.72601908927446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e5cb7c3fc33d%3A0x10d2997c801d5467!2z44CSNTMyLTAwMjIg5aSn6Ziq5bqc5aSn6Ziq5biC5reA5bed5Yy66YeO5Lit5Y2X77yR5LiB55uu77yR4oiS77yT!5e0!3m2!1sja!2sjp!4v1603180448430!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+
+                    <h3 class="traffic_guide_text_title">幼稚園バス</h3>
+                    
+                    <span class="age">0歳～2歳</span>
+                    <p>保護者様による送迎をお願いしております。台数に限りがありますが、駐車場も完備しておりますので、マイカーでの送迎も可能です。 </p>
+                    
+                    <span class="age">3歳～5歳</span>
+                    <p>送迎、または園バスの利用が可能です。 </p>
+    
+                </article>
+        </section>
+
+
+
+
+        <!-- フッターここから -->
+        <footer>
+            <div class="footer_logo">
+                <div class="footer_logo_mark"><a href="#"><span class="footer_logo_icon"><img src="img/logo.png" alt="ロゴマーク"></span><p class="footer_text">AKEMI</p></a></div>
+                <div class="footer_akemigakuen">
+                    <h1>明美学園</h1>
+                    <p>認定こども園<br/>あけみ保育園・あけみ幼稚園</p>
+                </div>
+                <div class="copyright"><small><p>Copyright © Akemi Educational Institution. All Rights Reserved.</div></p></small></div>
+        </footer>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            // ハンバーガーメニュー
+            function humberger () {
+                document.getElementById("line_1").classList.toggle("line1");
+                document.getElementById("line_2").classList.toggle("line2");
+                document.getElementById("line_3").classList.toggle("line3");
+                document.getElementById("nav_humberger").classList.toggle("fadein");
+            }
+            
+            document.getElementById("humberger_btn").addEventListener("click", function() {
+                humberger();
+            }
+            
+            ); 
+            
+            // スライドショー 
+            var swiper=new Swiper('.swiper-container', {
+                spaceBetween: 30, centeredSlides: true, autoplay: {
+                    delay: 6000, //秒数の指定
+                    disableOnInteraction: false,
+                }
+                , pagination: {
+                    el: '.swiper-pagination', clickable: true,
+                }
+                , navigation: {
+                    nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev',
+                }
+                ,
+            }
+            
+            );
+        </script>
+</body>
+</html>

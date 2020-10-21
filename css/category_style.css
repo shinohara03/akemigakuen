@@ -457,6 +457,12 @@ form dl dt{
       top: 5px;
   }
 
+   
+  /*一応幅を決めておきます*/
+  input[type="date"] {
+      width: 200px;
+  }
+   
 
 @media screen and (min-width: 767px) {
     /*ウィンドウ幅が最大767px以上の場合に適用*/
@@ -502,3 +508,126 @@ form dl dt{
 
 
 /* 交通の案内 */
+.traffic_guide_wrapper {
+    margin: 0 auto;
+    margin: 10px;
+    padding: 20px;
+}
+
+h2.traffic_guide_title {
+    background-size: 42px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.traffic_guide_title span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+
+h3.traffic_guide_text_title {
+    background: #b4c6e7;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+table.traffic_guide {
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.traffic_guide th {
+    width: 30%;
+    border: solid 1px #333;
+    background: #ecf5d9;
+    text-align: left;
+    padding: 10px;
+}
+.traffic_guide td {
+    border: solid 1px #333;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.traffic_guide td {
+    width: 70%;
+}
+.map_content {
+    margin: 0 auto;
+    margin: 20px 0;
+}
+
+.traffic_guide_wrapper p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 10px 10px;
+}
+span.age {
+    border-radius:10px;
+    background: rgb(0, 155, 52);
+    padding:5px;
+    font-size: 0.8rem;
+    color:#fff;
+    margin: 10px 10px;
+}
+
+
+
+
+@media screen and (min-width: 767px) {
+    /*ウィンドウ幅が最大767px以上の場合に適用*/
+    table.traffic_guide {
+        width: 80%;
+        margin: 0 auto;
+    }
+    h2.traffic_guide_title {
+        /* background-size: 42px; */
+        font-size: 1.5rem;
+    }
+
+    h3.traffic_guide_text_title {
+        font-size: 1.3rem;
+    }
+    .traffic_guide th td {
+        border: solid 1px #333;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .map_content {
+        width:80%;
+        margin: 0 auto;
+    }
+    .access_content{
+        margin: 0 auto;
+        margin: 20px 0;
+
+    }
+    .table.traffic_guide {
+        width: 80%;
+    }
+
+    .traffic_guide_wrapper p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin: 20px 10px;
+       
+    }
+    span.age {
+        border-radius:10px;
+        padding:10px;
+        font-size: 1rem;
+        margin: 20px 10px;
+    }
+    }

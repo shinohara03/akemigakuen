@@ -93,15 +93,23 @@
                                 <input value="" type="text" id="username" name="username" placeholder="名前を入力してください">                            </dd>
                             <dt><label for="name">メールアドレス：</label></dt>
                             <dd>
-                                <input type="email" id="mail" name="mail">
+                                <input type="email" id="mail" name="mail" placeholder="メールアドレスを入力してください">  
                             </dd>
-                            <dt><label for="name">日時：</label></dt>
+                            <dt><label for="name">日程：</label></dt>
                             <dd>
-                                <input type="data" id="name" name="username">
+                                <input type="date">
                             </dd>
                             <dt><label for="name">参加希望時間：</label></dt>
                             <dd>
-                                <input type="text" id="name" name="username">
+                                <select>
+                                    <option>ご希望のお時間をお選びください</option>
+                                    <option>10:00</option>
+                                    <option>12:00</option>
+                                    <option>14:00</option>
+                                    <option>16:00</option>
+                                    <option>18:00</option>
+                                </select>
+                                <!-- <input type="time" id="time" name="time"> -->
                             </dd>
                             <dt><label for="comment">その他：</label></dt>
                             <dd>
@@ -113,8 +121,6 @@
                 </div>
              </article>
         </section>
-
-
 
         <!-- <section>
                 <article class="contact_wrapper">
